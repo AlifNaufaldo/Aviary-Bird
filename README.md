@@ -35,18 +35,6 @@ Ini adalah aplikasi Next.js yang sederhana.
 - `public/` - Folder ini berisi aset statis seperti gambar, font, dll.
 - `styles/` - Folder ini berisi file CSS untuk styling aplikasi.
 
-## Untuk Produksi
-
-1. **Build aplikasi**:
-   ```bash
-   npm run build
-   ```
-
-2. **Jalankan aplikasi dalam mode produksi**:
-   ```bash
-   npm start
-   ```
-
 ## Teknologi yang Digunakan
 
 - **Next.js**: Framework React untuk pengembangan aplikasi web.
