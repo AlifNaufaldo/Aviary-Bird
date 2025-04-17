@@ -1,20 +1,22 @@
-
 # Aviary Bird
 
-Ini adalah aplikasi Next.js yang sederhana.
+Ini adalah aplikasi Next.js sederhana yang menampilkan video, berita, dan komunitas pengguna.
 
-🚀 **Live Demo:** [https://aviary-bird-green.vercel.app/](https://aviary-bird-green.vercel.app/)
+🚀 **Live Demo:**  
+[https://aviary-bird-green.vercel.app/](https://aviary-bird-green.vercel.app/)
 
-## Langkah-langkah untuk memulai
+---
+
+## 🛠️ Langkah-langkah untuk Memulai
 
 1. **Clone repository**:
    ```bash
    git clone https://github.com/AlifNaufaldo/Aviary-Bird.git
    ```
 
-2. **Masuk ke direktori aplikasi**:
+2. **Masuk ke direktori proyek**:
    ```bash
-   cd my-app
+   cd Aviary-Bird
    ```
 
 3. **Install dependensi**:
@@ -29,18 +31,70 @@ Ini adalah aplikasi Next.js yang sederhana.
 
 5. Aplikasi akan berjalan di `http://localhost:3000`.
 
-## Struktur Proyek
+---
 
-- `pages/` - Folder ini berisi halaman-halaman yang dapat diakses aplikasi.
-- `public/` - Folder ini berisi aset statis seperti gambar, font, dll.
-- `styles/` - Folder ini berisi file CSS untuk styling aplikasi.
+## 📁 Struktur Proyek
 
-## Teknologi yang Digunakan
+```
+src/
+├── app/                   # Menggunakan App Router
+│   ├── layout.js          # Layout utama aplikasi
+│   ├── page.js            # Halaman utama
+│   ├── globals.css        # Global styling
+│   └── favicon.ico        # Ikon aplikasi
+│
+├── components/            # Komponen-komponen UI
+│   ├── Header.jsx
+│   ├── HeroSection.jsx
+│   ├── NewsCard.jsx
+│   ├── SectionTitle.jsx
+│   ├── UserCard.jsx
+│   ├── VideoCard.jsx
+│   └── YouTubeEmbed.jsx
+│
+public/                    # Aset statis (gambar, ikon, dll)
+├── aviary-bird-logo.png
+├── file.svg
+├── globe.svg
+├── hero-desktop.jpeg
+├── hero-mobile.jpeg
+├── next.svg
+├── vercel.svg
+└── window.svg
+```
 
-- **Next.js**: Framework React untuk pengembangan aplikasi web.
-- **React**: Library JavaScript untuk membangun antarmuka pengguna.
-- **Node.js**: Lingkungan runtime untuk menjalankan JavaScript di server.
+---
 
-## Lisensi
+## 🧰 Teknologi yang Digunakan
 
-MIT License - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+- **Next.js 15 (App Router)**
+- **React 18**
+- **Tailwind CSS** (jika digunakan)
+- **Node.js**
+- **Vercel** untuk deployment
+
+---
+
+## 📦 Untuk Produksi
+
+1. **Build aplikasi**:
+   ```bash
+   npm run build
+   ```
+
+2. **Jalankan dalam mode produksi (opsional)**:
+   ```bash
+   npm start
+   ```
+
+---
+
+## 📄 Lisensi
+
+MIT License – lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
+
+---
+
+## 🙋‍♂️ Kontribusi
+
+Pull Request dan saran sangat diterima. Terima kasih sudah mampir!
