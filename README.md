@@ -3,6 +3,8 @@
 
 Ini adalah aplikasi Next.js yang sederhana.
 
+🚀 **Live Demo:** [https://aviary-bird-green.vercel.app/](https://aviary-bird-green.vercel.app/)
+
 ## Langkah-langkah untuk memulai
 
 1. **Clone repository**:

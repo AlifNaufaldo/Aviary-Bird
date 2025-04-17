@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import VideoCard from "@/components/VideoCard";
-import NewsCard from "@/components/NewsCard";
-import UserCard from "@/components/UserCard";
-import HeroSection from "@/components/HeroSection";
-import SectionTitle from "@/components/SectionTitle";
+import Header from "../components/Header";
+import VideoCard from "../components/VideoCard";
+import NewsCard from "../components/NewsCard";
+import UserCard from "../components/UserCard";
+import HeroSection from "../components/HeroSection";
+import SectionTitle from "../components/SectionTitle";
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -95,17 +95,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto">
-        {/* Main app container */}
-        <div
-          className={`${isDesktop ? "max-w-6xl mx-auto" : "max-w-md mx-auto"}`}
-        >
-          {isDesktop ? (
-            <DesktopView videos={videos} news={news} users={users} />
-          ) : (
-            <MobileView videos={videos} news={news} users={users} />
-          )}
-        </div>
+      <div
+        className={`${isDesktop ? "max-w mx-auto" : "max-w-md mx-auto"}`}
+      >
+        {isDesktop ? (
+          <DesktopView videos={videos} news={news} users={users} />
+        ) : (
+          <MobileView videos={videos} news={news} users={users} />
+        )}
       </div>
     </div>
   );
@@ -113,13 +110,17 @@ export default function Home() {
 
 function DesktopView({ videos, news, users }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full">
       <Header isDesktop={true} />
       <div>
         <HeroSection isDesktop={true} />
 
         <div className="p-6">
-          <SectionTitle title="Pemantauan Populer" viewAllLink="#" className="font-bold" />
+          <SectionTitle
+            title="Pemantauan Populer"
+            viewAllLink="#"
+            className="font-bold"
+          />
 
           <div className="grid grid-cols-4 gap-4 mb-8">
             {videos.map((video) => (
@@ -163,7 +164,6 @@ function MobileView({ videos, news, users }) {
           title="Pemantauan Populer"
           viewAllLink="#"
           isMobile={true}
-
         />
 
         <div className="flex overflow-x-auto space-x-4 pb-4 mb-4">
