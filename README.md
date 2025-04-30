@@ -69,23 +69,9 @@ public/                    # Aset statis (gambar, ikon, dll)
 
 - **Next.js 15 (App Router)**
 - **React 18**
-- **Tailwind CSS** (jika digunakan)
+- **Tailwind CSS**
 - **Node.js**
 - **Vercel** untuk deployment
-
----
-
-## 📦 Untuk Produksi
-
-1. **Build aplikasi**:
-   ```bash
-   npm run build
-   ```
-
-2. **Jalankan dalam mode produksi (opsional)**:
-   ```bash
-   npm start
-   ```
 
 ---
 
